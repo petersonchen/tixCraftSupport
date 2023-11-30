@@ -1,6 +1,6 @@
 // ticket
 
-if ($("#ticketPriceList select").length == 2) {
+if ($("#ticketPriceList select").length > 0) {
   let $ticket_options = $("#ticketPriceList select option");
   if ($ticket_options.length) {
     chrome.storage.local.get({
